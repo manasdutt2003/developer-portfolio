@@ -57,7 +57,7 @@ function App() {
       </section>
 
       <footer>
-        <p>© 2026 Developer Portfolio. Built with React & Vite.</p>
+        <p>© 2026 Developer Portfolio. Built with React & Vite. (v1.1 - Live)</p>
       </footer>
     </div>
   )
