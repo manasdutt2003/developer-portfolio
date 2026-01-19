@@ -1,0 +1,159 @@
+[
+  {
+    "id": 1,
+    "title": "MSME Invest Connect",
+    "description": "A full-stack MERN marketplace connecting MSMEs with investors. Features authentication, real-time data, and investment tracking.",
+    "tech": [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "JWT"
+    ],
+    "link": "https://client-fi4jlppxl-manas-dutts-projects.vercel.app",
+    "image": "https://placehold.co/600x400/2ecc71/ffffff?text=MSME+Invest"
+  },
+  {
+    "id": 2,
+    "title": "Bus Fleet Management",
+    "description": "Real-time bus tracking and route optimization system for students. Features live ETAs and notification alerts.",
+    "tech": [
+      "Python",
+      "Flask",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "link": "https://github.com/manasdutt2003/Integrated-Tracking-and-Reporting-System.git",
+    "image": "https://placehold.co/600x400/e74c3c/ffffff?text=Bus+Fleet"
+  },
+  {
+    "id": 3,
+    "title": "AI Learning Style Predictor",
+    "description": "Interactive dashboard analyzing student learning patterns using FSLSM dimensions and CatBoost machine learning.",
+    "tech": [
+      "Python",
+      "Streamlit",
+      "CatBoost",
+      "Plotly",
+      "Pandas"
+    ],
+    "link": "https://github.com/manasdutt2003/Learning-Style-Identification-using-semi-supervised-learning.git",
+    "image": "https://placehold.co/600x400/3498db/ffffff?text=AI+Learning"
+  },
+  {
+    "id": 4,
+    "title": "Q-A ChatBot",
+    "description": "Intelligent conversational assistant built with LangChain and LLMs for automated question answering.",
+    "tech": [
+      "Python",
+      "LangChain",
+      "Streamlit",
+      "LLM"
+    ],
+    "link": "https://github.com/manasdutt2003/Q-A_ChatBot.git",
+    "image": "https://placehold.co/600x400/9b59b6/ffffff?text=AI+ChatBot"
+  },
+  {
+    "id": 5,
+    "title": "Deepfake Detection",
+    "description": "Computer vision system to detect and analyze deepfake media using advanced deep learning models.",
+    "tech": [
+      "Python",
+      "PyTorch",
+      "OpenCV",
+      "Streamlit"
+    ],
+    "link": "https://deepfake-detection-model-bfs6ddcvktmhahcvbjzttd.streamlit.app/",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Deepfake+Detection"
+  },
+  {
+    "id": 6,
+    "title": "Shadow Removal System",
+    "description": "Advanced image processing pipeline for detecting and removing shadows from images using deep neural networks.",
+    "tech": [
+      "Python",
+      "PyTorch",
+      "Computer Vision"
+    ],
+    "link": "https://github.com/manasdutt2003/Shadow_detection_and_removal.git",
+    "image": "https://placehold.co/600x400/95a5a6/ffffff?text=Shadow+Removal"
+  },
+  {
+    "id": 7,
+    "title": "FinanceOwl",
+    "description": "A full-stack expense tracker application to track income, expenses, and visualize financial health.",
+    "tech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Chart.js"
+    ],
+    "link": "https://github.com/manasdutt2003/FinanceOwl.git",
+    "image": "https://placehold.co/600x400/f1c40f/ffffff?text=FinanceOwl"
+  },
+  {
+    "id": 8,
+    "title": "LeetMetric",
+    "description": "An application to track and analyze LeetCode problem-solving progress and metrics.",
+    "tech": [
+      "JavaScript",
+      "API Integration",
+      "Data Visualization"
+    ],
+    "link": "https://github.com/manasdutt2003/LeetMetric.git",
+    "image": "https://placehold.co/600x400/e67e22/ffffff?text=LeetMetric"
+  },
+  {
+    "id": 9,
+    "title": "Invoice Extractor",
+    "description": "Automated tool for extracting structured data from invoices using OCR and NLP techniques.",
+    "tech": [
+      "Python",
+      "OCR",
+      "NLP"
+    ],
+    "link": "https://github.com/manasdutt2003/InvoiceExtractor.git",
+    "image": "https://placehold.co/600x400/1abc9c/ffffff?text=Invoice+Extractor"
+  },
+  {
+    "id": 10,
+    "title": "Pinecone & LangChain Search",
+    "description": "Semantic search implementation using Pinecone vector database and LangChain framework.",
+    "tech": [
+      "Python",
+      "Pinecone",
+      "LangChain",
+      "Vector DB"
+    ],
+    "link": "https://github.com/manasdutt2003/QuerySearch_Using_PineConeDB_and_LangChain.git",
+    "image": "https://placehold.co/600x400/34495e/ffffff?text=Vector+Search"
+  },
+  {
+    "id": 11,
+    "title": "Blog Generator",
+    "description": "AI-powered blog post generator leveraging Llama models and LangChain for content creation.",
+    "tech": [
+      "Python",
+      "Llama",
+      "LangChain",
+      "LLM"
+    ],
+    "link": "https://github.com/manasdutt2003/BlogGeneration_using_Llama_and_Langchain.git",
+    "image": "https://placehold.co/600x400/9b59b6/ffffff?text=Blog+Gen"
+  },
+  {
+    "id": 12,
+    "title": "PDF Query System",
+    "description": "Document question-answering system using LangChain and Cassandra for efficient PDF querying.",
+    "tech": [
+      "Python",
+      "LangChain",
+      "Cassandra",
+      "PDF Processing"
+    ],
+    "link": "https://github.com/manasdutt2003/PDF_Query_using_LangChain_and_Cassandra.git",
+    "image": "https://placehold.co/600x400/2980b9/ffffff?text=PDF+Query"
+  }
+]
