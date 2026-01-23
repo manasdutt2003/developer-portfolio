@@ -16,12 +16,12 @@
   {
     "id": 2,
     "title": "Bus Fleet Management",
-    "description": "Real-time bus tracking and route optimization system for students. Features live ETAs and notification alerts.",
+    "description": "Real-time bus tracking system with an AI-powered Chatbot Assistant (Gemini) for route queries. Features live ETAs, notifications, and student profiles.",
     "tech": [
       "Python",
       "Flask",
-      "HTML",
-      "CSS",
+      "Google Gemini",
+      "Tailwind CSS",
       "JavaScript"
     ],
     "link": "https://integrated-tracking-and-reporting-system.onrender.com",
@@ -29,17 +29,18 @@
   },
   {
     "id": 3,
-    "title": "AI Learning Style Predictor",
-    "description": "Explainable ML pipeline to predict FSLSM learning dimensions. Improved robustness on imbalanced data using SMOTE and hyperparameter tuning.",
+    "title": "AI Learning Style Predictor (SOTA Upgrade)",
+    "description": "State-of-the-Art Learning Style Identification using TabNet (Semi-Supervised) and Kolmogorov-Arnold Networks (KAN). Features Captum for advanced model interpretability.",
     "tech": [
       "Python",
-      "Streamlit",
-      "CatBoost",
-      "Plotly",
-      "Pandas"
+      "PyTorch",
+      "TabNet",
+      "KAN",
+      "Captum",
+      "Streamlit"
     ],
     "link": "https://learning-style-identification-using-semi-supervised-learning-q.streamlit.app/",
-    "image": "https://placehold.co/600x400/3498db/ffffff?text=AI+Learning"
+    "image": "https://placehold.co/600x400/3498db/ffffff?text=SOTA+Learning+AI"
   },
   {
     "id": 4,
