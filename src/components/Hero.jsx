@@ -1,48 +1,44 @@
 import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="h-screen flex flex-col justify-center items-center relative overflow-hidden bg-space">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-black to-black" />
+        <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden bg-bg">
+            {/* Subtle Background Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 blur-[120px] rounded-full pointer-events-none" />
 
-            <div className="z-10 text-center px-6">
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 }}
-                    className="text-accent tracking-[0.2em] text-sm uppercase mb-4"
-                >
-                    Software Engineer
-                </motion.p>
-
+            <div className="z-10 text-center px-6 max-w-4xl">
                 <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 }}
-                    className="text-6xl md:text-8xl font-bold tracking-tighter mb-6 bg-gradient-to-b from-white to-gray-500 bg-clip-text text-transparent"
+                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+                    className="text-5xl md:text-8xl font-semibold tracking-tight mb-6 text-primary"
                 >
-                    ENGINEERING<br />THE FUTURE
+                    Manas Dutt
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.6 }}
-                    className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed"
+                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
+                    className="text-xl md:text-3xl text-secondary mb-10 font-light"
                 >
-                    Building scalable systems and AI-driven solutions. Focusing on high-performance architecture and intuitive user experiences.
+                    Engineering the <span className="text-white font-normal">Next Generation</span> of Software.
                 </motion.p>
-            </div>
 
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
-                className="absolute bottom-10 animate-bounce"
-            >
-                <ArrowDown className="text-gray-500" />
-            </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.6 }}
+                    className="flex justify-center gap-4"
+                >
+                    <a href="#projects" className="bg-white text-black px-8 py-3 rounded-full font-medium hover:scale-105 transition-transform">
+                        View Work
+                    </a>
+                    <a href="#contact" className="px-8 py-3 rounded-full font-medium text-white border border-white/20 hover:bg-white/10 transition-colors">
+                        Contact Me
+                    </a>
+                </motion.div>
+            </div>
         </section>
     );
 };
