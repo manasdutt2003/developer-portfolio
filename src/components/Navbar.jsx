@@ -1,35 +1,30 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
-    const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => setScrolled(window.scrollY > 50);
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-md py-4' : 'bg-transparent py-6'}`}>
-            <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-                <motion.h1
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    className="text-2xl font-bold tracking-tighter"
-                >
-                    MANAS DUTT<span className="text-accent">.</span>
-                </motion.h1>
-
-                <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
-                    {['Experience', 'Projects', 'Achievements', 'Contact'].map((item) => (
-                        <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-white transition-colors uppercase tracking-widest">
+        <motion.div
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="fixed top-0 inset-x-0 z-50 flex justify-center pt-6 bg-gradient-to-b from-black/80 to-transparent backdrop-blur-[2px]"
+        >
+            <div className="glass rounded-full px-8 py-4 flex items-center space-x-8 border border-white/10 bg-black/40">
+                <a href="#" className="font-bold tracking-widest text-white uppercase text-sm">MANAS</a>
+                <div className="w-[1px] h-4 bg-white/20"></div>
+                <nav className="flex space-x-6 text-sm font-medium text-secondary">
+                    {['Experience', 'Projects', 'Contact'].map((item) => (
+                        <a
+                            key={item}
+                            href={`#${item.toLowerCase()}`}
+                            className="hover:text-white transition-colors"
+                        >
                             {item}
                         </a>
                     ))}
-                </div>
+                </nav>
             </div>
-        </nav>
+        </motion.div>
     );
 };
 

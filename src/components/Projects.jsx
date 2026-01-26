@@ -1,57 +1,60 @@
 import { motion } from 'framer-motion';
 import projectsData from '../data/projects.json';
+import { ArrowUpRight } from 'lucide-react';
 
 const Projects = () => {
-    return (
-        <section id="projects" className="py-24 bg-starship text-white">
-            <div className="max-w-7xl mx-auto px-6">
-                <motion.h2
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    className="text-4xl font-bold mb-16 border-l-4 border-accent pl-6 uppercase tracking-widest"
-                >
-                    Mission Log
-                </motion.h2>
+    // Use a subset of best projects for the primary bento grid to maintain layout balance
+    const featuredProjects = projectsData.slice(0, 6);
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projectsData.map((project, index) => (
+    return (
+        <section id="projects" className="py-32 px-6 bg-bg">
+            <div className="max-w-7xl mx-auto">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    className="mb-16"
+                >
+                    <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-primary mb-4">Selected Work.</h2>
+                    <p className="text-secondary text-lg max-w-xl">
+                        A curation of projects defining my journey in software engineering and AI.
+                    </p>
+                </motion.div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[400px]">
+                    {featuredProjects.map((project, index) => (
                         <motion.div
                             key={project.id}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.1 }}
-                            className="group bg-black border border-gray-800 hover:border-accent transition-all duration-300 overflow-hidden"
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: index * 0.1, duration: 0.5 }}
+                            className={`group relative rounded-3xl overflow-hidden bg-surfaceHighlight border border-white/5 hover:border-white/10 transition-colors ${index === 0 || index === 3 ? 'md:col-span-2' : ''
+                                }`}
                         >
-                            <div className="h-48 overflow-hidden relative">
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
+                            <div className="absolute inset-x-0 top-0 h-2/3 p-8 flex items-center justify-center bg-gradient-to-b from-white/5 to-transparent">
+                                {/* Placeholder for actual image if needed, or abstract representation */}
+                                <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-xl shadow-2xl transition-transform duration-700 group-hover:scale-105" />
                             </div>
 
-                            <div className="p-6">
-                                <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors">{project.title}</h3>
-                                <p className="text-gray-400 text-sm mb-4 line-clamp-3">{project.description}</p>
-
-                                <div className="flex flex-wrap gap-2 mb-6">
-                                    {project.tech.slice(0, 4).map((t, i) => ( // Show first 4 tags only
-                                        <span key={i} className="px-2 py-1 text-xs font-mono border border-gray-700 rounded text-gray-300">
-                                            {t}
-                                        </span>
-                                    ))}
-                                    {project.tech.length > 4 && <span className="text-xs text-gray-500 py-1">+{project.tech.length - 4}</span>}
+                            <div className="absolute bottom-0 inset-x-0 p-8 bg-gradient-to-t from-surfaceHighlight via-surfaceHighlight to-transparent">
+                                <div className="flex justify-between items-end">
+                                    <div>
+                                        <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
+                                        <p className="text-secondary line-clamp-2 text-sm mb-4">{project.description}</p>
+                                        <div className="flex gap-2 flex-wrap">
+                                            {project.tech.slice(0, 3).map(t => (
+                                                <span key={t} className="text-xs font-medium px-2 py-1 rounded-full bg-white/10 text-white/80 border border-white/5">{t}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="p-3 rounded-full bg-white text-black opacity-0 group-hover:opacity-100 transition-all transform translate-y-4 group-hover:translate-y-0"
+                                    >
+                                        <ArrowUpRight size={20} />
+                                    </a>
                                 </div>
-
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="inline-flex items-center text-sm font-bold uppercase tracking-wider hover:text-accent transition-colors"
-                                >
-                                    View Mission <span className="ml-2">→</span>
-                                </a>
                             </div>
                         </motion.div>
                     ))}
