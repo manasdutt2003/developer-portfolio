@@ -17,7 +17,7 @@ const PuzzleGate = ({ children }) => {
     const puzzles = [
         {
             id: 0,
-            title: "Security Check: Statistics",
+            title: "Security Check: Statistics (v3)",
             question: "In a standard normal distribution, what integer percentage of data falls within one standard deviation of the mean? (Just the number)",
             placeholder: "e.g., 50",
             validate: (ans) => ans.trim() === '68'
