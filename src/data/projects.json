@@ -24,7 +24,11 @@
       "Tailwind CSS",
       "JavaScript"
     ],
+<<<<<<< HEAD
     "link": "https://client-8fmpvwi9h-manas-dutts-projects.vercel.app",
+=======
+    "link": "https://vit-bus-manager.onrender.com",
+>>>>>>> 582c6fbb5ac500f1ac2d2e8349adaaae546dcb65
     "image": "https://placehold.co/600x400/e74c3c/ffffff?text=Bus+Fleet"
   },
   {
@@ -39,7 +43,11 @@
       "Captum",
       "Streamlit"
     ],
+<<<<<<< HEAD
     "link": "https://client-cgnyr2p4x-manas-dutts-projects.vercel.app",
+=======
+    "link": "https://learning-style-ai.onrender.com",
+>>>>>>> 582c6fbb5ac500f1ac2d2e8349adaaae546dcb65
     "image": "https://placehold.co/600x400/3498db/ffffff?text=SOTA+Learning+AI"
   },
   {
@@ -52,7 +60,11 @@
       "Streamlit",
       "LLM"
     ],
+<<<<<<< HEAD
     "link": "https://client-3hc1o1tk1-manas-dutts-projects.vercel.app",
+=======
+    "link": "https://vit-qa-chatbot.onrender.com",
+>>>>>>> 582c6fbb5ac500f1ac2d2e8349adaaae546dcb65
     "image": "https://placehold.co/600x400/9b59b6/ffffff?text=AI+ChatBot"
   },
   {
