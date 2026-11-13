@@ -1,4 +1,4 @@
-# apps/developer-portfolio/Dockerfile
+# Multi-stage build: install, build with Vite, serve the static output
 FROM node:20-alpine AS base
 
 # Install dependencies only when needed
@@ -14,7 +14,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 RUN npm run build
 
-# Production image, copy all the files and run next
+# Production image: serve the static build
 FROM base AS runner
 WORKDIR /app
 # Install serve to run the static build

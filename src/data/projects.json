@@ -10,7 +10,7 @@
       "Node.js",
       "JWT"
     ],
-    "link": "https://client-7573ztb20-manas-dutts-projects.vercel.app",
+    "link": "https://github.com/manasdutt2003/msme-invest-connect",
     "image": "https://placehold.co/600x400/2ecc71/ffffff?text=MSME+Invest"
   },
   {
@@ -24,11 +24,7 @@
       "Tailwind CSS",
       "JavaScript"
     ],
-<<<<<<< HEAD
-    "link": "https://client-8fmpvwi9h-manas-dutts-projects.vercel.app",
-=======
-    "link": "https://vit-bus-manager.onrender.com",
->>>>>>> 582c6fbb5ac500f1ac2d2e8349adaaae546dcb65
+    "link": "https://github.com/manasdutt2003/Integrated-Tracking-and-Reporting-System",
     "image": "https://placehold.co/600x400/e74c3c/ffffff?text=Bus+Fleet"
   },
   {
@@ -43,11 +39,7 @@
       "Captum",
       "Streamlit"
     ],
-<<<<<<< HEAD
-    "link": "https://client-cgnyr2p4x-manas-dutts-projects.vercel.app",
-=======
-    "link": "https://learning-style-ai.onrender.com",
->>>>>>> 582c6fbb5ac500f1ac2d2e8349adaaae546dcb65
+    "link": "https://learning-style-identification-using-semi-supervised-learning-6.streamlit.app/",
     "image": "https://placehold.co/600x400/3498db/ffffff?text=SOTA+Learning+AI"
   },
   {
@@ -60,11 +52,7 @@
       "Streamlit",
       "LLM"
     ],
-<<<<<<< HEAD
-    "link": "https://client-3hc1o1tk1-manas-dutts-projects.vercel.app",
-=======
-    "link": "https://vit-qa-chatbot.onrender.com",
->>>>>>> 582c6fbb5ac500f1ac2d2e8349adaaae546dcb65
+    "link": "https://github.com/manasdutt2003/Q-A_ChatBot",
     "image": "https://placehold.co/600x400/9b59b6/ffffff?text=AI+ChatBot"
   },
   {
@@ -77,7 +65,7 @@
       "OpenCV",
       "Streamlit"
     ],
-    "link": "https://client-fi4jlppxl-manas-dutts-projects.vercel.app",
+    "link": "https://github.com/manasdutt2003/Deepfake-Detection-Model",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Deepfake+Detection"
   },
   {
@@ -103,7 +91,7 @@
       "Tailwind CSS",
       "Chart.js"
     ],
-    "link": "https://github.com/manasdutt2003/FinanceOwl.git",
+    "link": "https://github.com/manasdutt2003/FinanceOwl",
     "image": "https://placehold.co/600x400/f1c40f/ffffff?text=FinanceOwl"
   },
   {
@@ -115,7 +103,7 @@
       "API Integration",
       "Data Visualization"
     ],
-    "link": "https://github.com/manasdutt2003/LeetMetric.git",
+    "link": "https://leet-metric-seven.vercel.app",
     "image": "https://placehold.co/600x400/e67e22/ffffff?text=LeetMetric"
   },
   {
@@ -127,7 +115,7 @@
       "OCR",
       "NLP"
     ],
-    "link": "https://github.com/manasdutt2003/InvoiceExtractor.git",
+    "link": "https://github.com/manasdutt2003/InvoiceExtractor",
     "image": "https://placehold.co/600x400/1abc9c/ffffff?text=Invoice+Extractor"
   },
   {
@@ -140,7 +128,7 @@
       "LangChain",
       "Vector DB"
     ],
-    "link": "https://github.com/manasdutt2003/QuerySearch_Using_PineConeDB_and_LangChain.git",
+    "link": "https://github.com/manasdutt2003/QuerySearch_Using_PineConeDB_and_LangChain",
     "image": "https://placehold.co/600x400/34495e/ffffff?text=Vector+Search"
   },
   {
@@ -153,7 +141,7 @@
       "LangChain",
       "LLM"
     ],
-    "link": "https://github.com/manasdutt2003/BlogGeneration_using_Llama_and_Langchain.git",
+    "link": "https://github.com/manasdutt2003/BlogGeneration_using_Llama_and_Langchain",
     "image": "https://placehold.co/600x400/9b59b6/ffffff?text=Blog+Gen"
   },
   {
@@ -166,7 +154,7 @@
       "Cassandra",
       "PDF Processing"
     ],
-    "link": "https://github.com/manasdutt2003/PDF_Query_using_LangChain_and_Cassandra.git",
+    "link": "https://github.com/manasdutt2003/PDF_Query_using_LangChain_and_Cassandra",
     "image": "https://placehold.co/600x400/2980b9/ffffff?text=PDF+Query"
   }
 ]

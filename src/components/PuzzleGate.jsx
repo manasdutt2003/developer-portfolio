@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const PuzzleGate = ({ children }) => {
-    const [unlocked, setUnlocked] = useState(false);
+    // Read the saved state during the first render so returning visitors do
+    // not see the puzzle flash before the site appears.
+    const [unlocked, setUnlocked] = useState(() => {
+        try {
+            return localStorage.getItem('portfolio_unlocked') === 'true';
+        } catch {
+            return false; // storage blocked (private mode)
+        }
+    });
     const [currentPuzzle, setCurrentPuzzle] = useState(0);
     const [answer, setAnswer] = useState('');
     const [error, setError] = useState(false);
-
-    // Check local storage on mount
-    useEffect(() => {
-        const isUnlocked = localStorage.getItem('portfolio_unlocked');
-        if (isUnlocked === 'true') {
-            setUnlocked(true);
-        }
-    }, []);
 
     const puzzles = [
         {
@@ -20,7 +20,7 @@ const PuzzleGate = ({ children }) => {
             title: "Security Check: Statistics (v3)",
             question: "In a standard normal distribution, what integer percentage of data falls within one standard deviation of the mean? (Just the number)",
             placeholder: "e.g., 50",
-            validate: (ans) => ans.trim() === '68'
+            validate: (ans) => ans.replace(/[\s%]/g, '') === '68'
         },
         {
             id: 1,
@@ -28,7 +28,7 @@ const PuzzleGate = ({ children }) => {
             question: "A system transitions between State A and B. P(A->B) = 0.3, P(B->A) = 0.4. What is the steady-state probability of State A? (Enter as fraction x/y)",
             placeholder: "e.g., 1/2",
             validate: (ans) => {
-                return ans.trim() === '4/7';
+                return ans.replace(/\s/g, '') === '4/7';
             }
         }
     ];
@@ -41,7 +41,11 @@ const PuzzleGate = ({ children }) => {
             if (currentPuzzle < puzzles.length - 1) {
                 setCurrentPuzzle(prev => prev + 1);
             } else {
-                localStorage.setItem('portfolio_unlocked', 'true');
+                try {
+                    localStorage.setItem('portfolio_unlocked', 'true');
+                } catch {
+                    // storage blocked: unlock for this visit only
+                }
                 setUnlocked(true);
             }
         } else {

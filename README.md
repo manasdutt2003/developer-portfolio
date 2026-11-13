@@ -1,16 +1,46 @@
-# React + Vite
+# Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio of Manas Dutt: a single-page React site with an animated
+hero, experience timeline, featured projects and contact section.
 
-Currently, two official plugins are available:
+**Live:** https://developer-portfolio-cyan-delta.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Bento-grid showcase of featured projects, driven by `src/data/projects.json`
+- Entry "puzzle gate": two short statistics questions unlock the site, and the
+  result is remembered in the browser
+- Scroll and hover animations with Framer Motion
+- Lazy-loaded sections to keep the first paint small
+- Resume download
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the ESLint configuration
+React 19, Vite 7, Tailwind CSS 3, Framer Motion, Lucide icons.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development
+
+```bash
+npm install
+npm run dev        # http://localhost:5173
+npm run lint
+npm run build      # output in dist/
+npm run preview    # serve the production build locally
+```
+
+## Editing content
+
+| What | Where |
+| --- | --- |
+| Projects | `src/data/projects.json` (the first six are featured) |
+| Experience | `src/components/Experience.jsx` |
+| Hero text | `src/components/Hero.jsx` |
+| Puzzle questions | `src/components/PuzzleGate.jsx` |
+| Resume | `public/resume.pdf` |
+
+## Deployment
+
+- **Vercel**: import the repository; `vercel.json` sets the Vite framework and
+  the single-page rewrite.
+- **Docker**: `docker build -t portfolio . && docker run -p 3000:3000 portfolio`
+- **GitHub Pages**: `npm run deploy` publishes `dist/` with `gh-pages`.
