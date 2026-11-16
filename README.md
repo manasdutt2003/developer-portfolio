@@ -28,6 +28,17 @@ npm run build      # output in dist/
 npm run preview    # serve the production build locally
 ```
 
+## Project layout
+
+- `src/App.jsx` wraps the page in `PuzzleGate`, renders `Navbar` and `Hero`
+  immediately, and lazy-loads `Experience`, `Projects` and `Contact`.
+- `src/components/` holds one component per section.
+- `src/data/projects.json` holds the project list.
+- `public/` holds static assets such as `resume.pdf`.
+
+The puzzle gate runs entirely in the browser. It is a UX element, not an access
+control, and it does not protect any content.
+
 ## Editing content
 
 | What | Where |
@@ -35,7 +46,9 @@ npm run preview    # serve the production build locally
 | Projects | `src/data/projects.json` (the first six are featured) |
 | Experience | `src/components/Experience.jsx` |
 | Hero text | `src/components/Hero.jsx` |
+| Contact email and footer text | `src/components/Contact.jsx` |
 | Puzzle questions | `src/components/PuzzleGate.jsx` |
+| Theme colours | `tailwind.config.js` (`theme.extend.colors`) |
 | Resume | `public/resume.pdf` |
 
 ## Deployment
